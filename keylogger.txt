@@ -1,0 +1,39 @@
+IDLE 0.94
+START Key.shift
+START 'H'
+END 'H' 0.06
+END Key.shift 0.03
+IDLE 0.27
+START 'e'
+END 'e' 0.07
+IDLE 0.12
+START 'l'
+END 'l' 0.07
+IDLE 0.1
+START 'l'
+END 'l' 0.06
+IDLE 0.1
+START 'o'
+END 'o' 0.07
+IDLE 0.46
+START ','
+END ',' 0.06
+IDLE 0.14
+START Key.space
+END Key.space 0.08
+IDLE 0.11
+START Key.shift
+START 'W'
+END Key.shift 0.24
+START 'o'
+END 'o' 0.07
+START 'r'
+END 'r' 0.08
+START 'l'
+END 'l' 0.07
+START 'd'
+END 'd' 0.09
+START Key.shift_r
+START '!'
+END '!' 0.07
+END Key.shift_r 0.07
