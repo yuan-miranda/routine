@@ -1,0 +1,2 @@
+# key log reader for RPI Pico, parses the keylogger.txt and power the specific GPIO pin connnected to a keyboard circuit board
+# similar source: https://www.instructables.com/Mapping-the-innards-of-a-keyboard/
