@@ -1,23 +1,5 @@
-# I think pynput is not working in 3.13.1
-# PS C:\Users\yuane\OneDrive\Documents\vscode\1 OUTDATED REPO\routine> python .\mouselogger.py     
-# mouselogger.py is listening
-# Unhandled exception in listener callback
-# Traceback (most recent call last):
-#   File "C:\Users\yuane\AppData\Local\Programs\Python\Python313\Lib\site-packages\pynput\_util\win32.py", line 386, in _handler
-#     converted = self._convert(code, msg, lpdata)
-#   File "C:\Users\yuane\AppData\Local\Programs\Python\Python313\Lib\site-packages\pynput\_util\win32.py", line 401, in _convert
-#     raise NotImplementedError()
-# NotImplementedError
-
-# During handling of the above exception, another exception occurred:
-
-# Traceback (most recent call last):
-#   File "C:\Users\yuane\AppData\Local\Programs\Python\Python313\Lib\site-packages\pynput\_util\__init__.py", line 229, in inner
-#     return f(self, *args, **kwargs)
-#   File "C:\Users\yuane\AppData\Local\Programs\Python\Python313\Lib\site-packages\pynput\_util\win32.py", line 390, in _handler
-#     self._handle(code, msg, lpdata)
-#     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
-# TypeError: '_thread._ThreadHandle' object is not callable
+# I think pynput is not working in 3.13.1 (must downgrade to 3.11.6)
+# https://github.com/yuan-miranda/routine/issues/2#issue-2841793991
 
 import pynput
 import time
